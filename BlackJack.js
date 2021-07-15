@@ -104,21 +104,23 @@ function showScore(activePlayer) {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve,ms));
 }
+
 async function DealerLogic() {
     blackjackgame['isStand'] = true;
     while(DEALER['score']<16 && blackjackgame['isStand']===true) {
-        
+    
         let card = randomcard();
         showCard(DEALER,card);
         updatescore(card,DEALER);
         showScore(DEALER);
         await sleep(1000);
-        }
+    }
     
         blackjackgame['turnsOver'] = true;
         let winner = computeWinner();
         showResult(winner);   
 }
+
     
 
 //compute winner and return who won
@@ -179,6 +181,4 @@ function showResult(winner) {
         document.querySelector('#blackjack-result').style.color = messageColor;
     }
 }
-
-
-
+    
