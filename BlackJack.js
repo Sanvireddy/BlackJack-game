@@ -59,7 +59,7 @@ function blackjackdeal() {
             
         }
         for(let i=0;i<DealerImages.length;i++) {
-        DealerImages[i].remove();
+            DealerImages[i].remove();
         }
         YOU['score']=0;
         DEALER['score']=0;
