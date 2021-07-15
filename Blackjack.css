@@ -1,0 +1,62 @@
+.flex-box-pick-color {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container-4 {
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container-4 .flex-box-row-1,
+.flex-box-row-2,
+.flex-box-row-3 {
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-box-row-1,
+.flex-box-row-2 {
+  background: url("https://t3.ftcdn.net/jpg/03/25/38/64/360_F_325386410_7XLHgFBmPH10k0GCUXbikWCAeFFC8145.jpg");
+  color: #fff;
+}
+
+.flex-box-row-1 div {
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 350px;
+}
+
+.flex-box-row-1 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.flex-box-row-2 button {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.flex-box-row-2 div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+table,
+th,
+td {
+  padding: 7px;
+  border: 1px solid black;
+}
